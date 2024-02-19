@@ -1,0 +1,57 @@
+final product = [
+  {
+    'id': 0,
+    'company': 'Empire hotel',
+    'title': 'Empire hotel',
+    'price': "Gandhi Circle, Mysore",
+    'size': [6, 7, 8, 9, 10, 11],
+    'imageurl': 'assets/images/ho1.jpg',
+    'mapUrl': 'https://maps.app.goo.gl/SxeTS54qvaKYTmxu8',
+    'isAvaliable': true,
+    'count': 5,
+  },
+  {
+    'id': 1,
+    'company': 'Hotel RRR',
+    'title': 'Hotel RRR ',
+    'price': "Indira Nagar, Bangalore",
+    'size': [6, 7, 8, 9, 10, 11],
+    'imageurl': 'assets/images/ho2.jpg',
+    'mapUrl': 'https://maps.app.goo.gl/rbnAWgxdDx4xuw7Z7',
+    'isAvaliable': false,
+    'count': 5,
+  },
+  {
+    'id': 2,
+    'company': 'Hotel Hanamanthu',
+    'title': 'Hotel Hanamanthu',
+    'price': "Whitefield, Bangalore",
+    'size': [6, 7, 8, 9, 10, 11],
+    'imageurl': 'assets/images/ho3.jpg',
+    'mapUrl': 'https://maps.app.goo.gl/xEHJwhppuvdMPPiz9',
+    'isAvaliable': true,
+    'count': 5,
+  },
+  {
+    'id': 3,
+    'company': 'Green Leaf',
+    'title': 'Green Leaf',
+    'price': "JP Nagar, Mysore",
+    'size': [6, 7, 8, 9, 10, 11],
+    'imageurl': 'assets/images/ho4.jpg',
+    'mapUrl': 'https://maps.app.goo.gl/5iS7Z4rGCw62fAyL6',
+    'isAvaliable': false,
+    'count': 5,
+  },
+];
+
+// final cart = [
+//   {
+//     'id': 3,
+//     'company': 'Johrdon',
+//     'title': 'Men\'s showes',
+//     'price': 2000.89,
+//     'size': 8,
+//     'imageurl': 'assets/images/shoes.png',
+//   },
+// ];
