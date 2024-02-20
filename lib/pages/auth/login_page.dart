@@ -43,19 +43,26 @@ class _LoginPageState extends State<LoginPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         const Text(
-                          "Groupie",
+                          "NAMASTE",
                           style: TextStyle(
                               fontSize: 40, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 10),
-                        const Text("Login now to see what they are talking!",
+                        const Text("One app for many problems....",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w400)),
                         SizedBox(height: 5),
-                        Image.asset(
-                          "assets/group.jpg",
-                          width: 350,
-                          height: 320,
+                        // Image.asset(
+
+                        //   "assets/app_logo2.png",
+                        //   width: 350,
+                        //   height: 320,
+                        // ),
+                        CircleAvatar(
+                          backgroundColor: Colors.transparent,
+                          radius: 150,
+                          backgroundImage:
+                              const AssetImage("assets/app_logo2.png"),
                         ),
                         SizedBox(
                           height: 15,

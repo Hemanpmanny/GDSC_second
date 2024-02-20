@@ -16,7 +16,7 @@ class _ScreensWrapperState extends State<ScreensWrapper> {
   final List<Widget> _pages = [
     const HomeScreen(),
     const MarketScreen(),
-    const ProfileScreen(),
+    // const ProfileScreen(),
   ];
 
   @override
@@ -38,17 +38,23 @@ class _ScreensWrapperState extends State<ScreensWrapper> {
           },
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.chrome_reader_mode_outlined),
+              icon: Icon(
+                Icons.home_outlined,
+                size: 25,
+              ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.storefront_outlined),
+              icon: Icon(Icons.storefront_outlined, size: 25),
               label: 'Book Store',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline),
-              label: 'Profile',
-            ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(
+            //     Icons.person_outline,
+            //     size: 25,
+            //   ),
+            //   label: 'Profile',
+            // ),
           ],
         ),
       ),

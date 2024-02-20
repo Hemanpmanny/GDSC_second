@@ -194,8 +194,8 @@ class _HomePageState extends State<HomePage> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                opacity: 0.6,
-                image: AssetImage("assets/wall.jpg"), // replace with your image
+                opacity: 0.4,
+                image: AssetImage("assets/bg1.jpg"), // replace with your image
                 fit: BoxFit.cover,
               ),
             ),
@@ -265,9 +265,10 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue),
-                  child: const Text("CANCEL",),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+                  child: const Text(
+                    "CANCEL",
+                  ),
                 ),
                 ElevatedButton(
                   onPressed: () async {
@@ -287,8 +288,7 @@ class _HomePageState extends State<HomePage> {
                           context, Colors.green, "Group created successfully.");
                     }
                   },
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                   child: const Text("CREATE"),
                 )
               ],
@@ -309,10 +309,25 @@ class _HomePageState extends State<HomePage> {
                 itemCount: snapshot.data['groups'].length,
                 itemBuilder: (context, index) {
                   int reverseIndex = snapshot.data['groups'].length - index - 1;
-                  return GroupTile(
-                      groupId: getId(snapshot.data['groups'][reverseIndex]),
-                      groupName: getName(snapshot.data['groups'][reverseIndex]),
-                      userName: snapshot.data['fullName']);
+                  return Card(
+                    elevation: 3,
+                    color: Colors.white,
+                    // Wrap with a Card
+                    shape: RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.circular(55), // Add rounded corners
+                    ),
+                    child: Padding(
+                      // Add some padding
+                      padding: const EdgeInsets.all(0.5),
+                      child: GroupTile(
+                        groupId: getId(snapshot.data['groups'][reverseIndex]),
+                        groupName:
+                            getName(snapshot.data['groups'][reverseIndex]),
+                        userName: snapshot.data['fullName'],
+                      ),
+                    ),
+                  );
                 },
               );
             } else {

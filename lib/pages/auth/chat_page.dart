@@ -75,10 +75,11 @@ class _ChatPageState extends State<ChatPage> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              alignment: Alignment.center,
-              opacity: 1,
-              image: AssetImage("assets/doodle.jpg"),
-              fit: BoxFit.cover),
+            alignment: Alignment.center,
+            opacity: 0.7,
+            image: AssetImage("assets/tenticle.jpg"),
+            fit: BoxFit.fill, // Change this
+          ),
         ),
         child: Stack(
           children: <Widget>[

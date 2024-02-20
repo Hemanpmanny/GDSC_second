@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:groupchat/ChatBot/chat_bot.dart';
 import 'package:groupchat/Food%20Donation/food_donation.dart';
@@ -189,106 +190,275 @@ class _SelectPageState extends State<SelectPage> {
           crossAxisSpacing: 20.0,
           mainAxisSpacing: 20.0,
           children: [
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => FoodDonation()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.fastfood, size: 40.0),
-                    Text('Food Donation'),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => FoodDonation()),
+            //       );
+            //     },
+            //     child: Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Image.asset('assets/food.jpg', width: 100, height: 100),
+            //         // Icon(Icons.fastfood, size: 40.0),
+            //         Text('Food Donation'),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FoodDonation()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'Food Donation',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Home()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.directions_boat_filled_sharp, size: 40.0),
-                    Text('Donate Things'),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => const Home()),
+            //       );
+            //     },
+            //     child: const Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(Icons.directions_boat_filled_sharp, size: 40.0),
+            //         Text('Donate Things'),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Home()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'Donate things',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyApp()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.book_rounded, size: 40.0),
-                    Text('E-Library'),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => const MyApp()),
+            //       );
+            //     },
+            //     child: const Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(Icons.book_rounded, size: 40.0),
+            //         Text('E-Library'),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyApp()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'E-Library',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.mode_comment_outlined, size: 40.0),
-                    Text('Community'),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => HomePage()),
+            //       );
+            //     },
+            //     child: const Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(Icons.mode_comment_outlined, size: 40.0),
+            //         Text('Community'),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'Community',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeItem()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.call_received, size: 40.0),
-                    Text('Recieve Things '),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => const HomeItem()),
+            //       );
+            //     },
+            //     child: const Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(Icons.call_received, size: 40.0),
+            //         Text('Recieve Things '),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomeItem()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'Recieve Things',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
-            Card(
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ChatBot()),
-                  );
-                },
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.chat_rounded, size: 40.0),
-                    Text('ChatBot'),
-                  ],
-                ),
+            // Card(
+            //   elevation: 5,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.push(
+            //         context,
+            //         MaterialPageRoute(builder: (context) => ChatBot()),
+            //       );
+            //     },
+            //     child: const Column(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Icon(Icons.chat_rounded, size: 40.0),
+            //         Text('ChatBot'),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatBot()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'ChatBot',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FoodDonation()),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(15)),
+                height: 100,
+                width: 100,
+                child: Column(children: [
+                  Image.asset('assets/food.jpg', width: 120, height: 120),
+                  Text(
+                    'girl education',
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  )
+                ]),
               ),
             ),
           ],

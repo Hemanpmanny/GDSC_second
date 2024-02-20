@@ -11,9 +11,11 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 200, 207, 212),
-        title: Text(
-          "Your Dashboard 📰",
-          style: Theme.of(context).textTheme.labelLarge,
+        title: Center(
+          child: Text(
+            "Your Dashboard 📰",
+            style: Theme.of(context).textTheme.labelLarge,
+          ),
         ),
       ),
       body: SingleChildScrollView(

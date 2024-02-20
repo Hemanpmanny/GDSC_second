@@ -39,16 +39,20 @@ class _RegisterPageState extends State<RegisterPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         const Text(
-                          "Groupie",
+                          "NAMASTE",
                           style: TextStyle(
                               fontSize: 40, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 10),
-                        const Text(
-                            "Create your account now to chat and explore",
+                        const Text("One app for many problems....",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w400)),
-                        Image.asset("assets/register.png"),
+                        CircleAvatar(
+                          backgroundColor: Colors.transparent,
+                          radius: 150,
+                          backgroundImage:
+                              const AssetImage("assets/app_logo2.png"),
+                        ),
                         TextFormField(
                           decoration: textInputDecoration.copyWith(
                               labelText: "Full Name",
